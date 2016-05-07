@@ -2,3 +2,4 @@ This folder concerns itself with isolating from the samples a clean voice stream
 
 Simple approach: [http://www.cdf.toronto.edu/~csc209h/winter/assignments/a1/a1.html](remvocals CSC209 assignment 1)
 Complex approach (but possibly not that hard to implement): [http://arxiv.org/abs/1504.04658](Deep Karaoke)
+
