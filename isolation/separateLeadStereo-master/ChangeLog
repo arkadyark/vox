@@ -1,0 +1,27 @@
+2012-08-10  Jean-Louis Durrieu  <jean-louis.durrieu@epfl.ch>
+
+	* separateLeadStereoParam.py (main): removed "option, args" from
+	main method arguments (not sure why this was added...)
+
+2012-05-22  Jean-Louis Durrieu  <jean-louis.durrieu@epfl.ch>
+
+	* tracking.py (viterbiTrackingArray): 
+	Correction by E. Vincent: stopping limit in qrqnge should be -1,
+	and not 0 in:
+	arange(numberOfFrames - 2, -1, -1)
+
+2012-05-01  Jean-Louis Durrieu  <jean-louis.durrieu@epfl.ch>
+
+	* SIMM.py (SIMM): 
+	added the updateHGAMMA flag, to enable targetted reestimation of 
+	parameters
+	TODO: make this a string like updateParams='fgpmFGPM' such that
+	if 'f' in updateParams, update WF0, if 'F' in... update HF0, etc.
+
+	* separateLeadStereoParam.py (main): 
+	Refactoring, changed fs to Fs, to avoid duplicate variable
+
+2012-04-10  Jean-Louis Durrieu  <jean-louis.durrieu@epfl.ch>
+
+	* SIMM.py (SIMM): added boolean to avoid computation of
+	IS distortion
